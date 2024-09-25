@@ -29,12 +29,12 @@ bot = Client(
     bot_token="7704985946:AAFbmt5-vR18anJr5LnSiQLxbzKet4DEa0o",
 
 
-@bot.on_message(filters.command(["start"]))
+@bot.on_message(filter.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Hi!\n\nGive /txt Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** ༺𝙅𝙊𝙃𝙉✪𝙒𝙄𝘾𝙆༻\n")
 
 
-@bot.on_message(filters.command("stop"))
+@bot.on_message(filter.command("stop"))
 async def restart_handler(_, m):
     await m.reply_text("**Stopped**🚦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
