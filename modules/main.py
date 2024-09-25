@@ -25,7 +25,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 bot = Client(
     "bot",
     api_id=10499690,
-    api_hash="87d0414dc159c10225cac921edde640a"
+    api_hash="87d0414dc159c10225cac921edde640a",
     bot_token="7704985946:AAFbmt5-vR18anJr5LnSiQLxbzKet4DEa0o",
 
 
